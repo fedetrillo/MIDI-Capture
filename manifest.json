@@ -1,0 +1,21 @@
+{
+    "package_name": "MIDI Capture",
+    "id": "com.fedetrillo.midicapture",
+    "title": "MIDI Capture",
+    "name": "MIDI Capture",
+    "version": "1.0.0",
+    "manufacturer": "Fede Trillo",
+    "contact": "fedetrillo@gmail.com",
+    "description": ["Never lose an idea: keeps everything you play on your MIDI keyboard as takes, even when LUNA is not recording, so you can listen back and capture the one you want onto a track."],
+    "categories": ["MIDI", "Recording", "Create"],
+    "icon": "icon.png",
+    "sdk_version": "3.1.2",
+    "min_luna_version": "3.1.2",
+    "engines": ["luna"],
+    "html": "index.html",
+    "target": "window",
+    "floating": true,
+    "show_with_session": true,
+    "width": 1000,
+    "height": 600
+}
