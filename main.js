@@ -5,7 +5,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const L = window.CaptureLogic;
-  const VERSION = '1.0.0';
+  const VERSION = '1.0.1';
   const KEY = 'com.fedetrillo.midicapture.';
   const store = {
     get: (k) => { try { return JSON.parse(localStorage.getItem(KEY + k)); } catch { return null; } },
@@ -566,7 +566,7 @@
         dest: destTrack()?.name.value ?? null,
         takes: taker.takes.slice(0, 10).map((k) => ({ play: k.play, notes: k.notes.length, pedals: k.pedals.length, ms: L.durMs(k), firstTick: k.notes[0]?.tick0 ?? null })),
         log: log.slice(-40) }, null, 2);
-      try { await navigator.clipboard.writeText(text); say('report', {}, 'ok', 3000); } catch { console.log(text); }
+      try { if (await AddOnCopy(text)) say('report', {}, 'ok', 5000); } catch { console.log(text); }
     };
 
     app = { paint: () => { $('liveTxt').textContent = t(stopListen ? 'listening' : 'notListening'); paintPick(); paintAct(); paintList(); paintView(); }, relisten: () => startListening(onEvent) };

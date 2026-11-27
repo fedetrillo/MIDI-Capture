@@ -1,8 +1,8 @@
 # MIDI Capture for LUNA
 
-Never lose an idea. While its window is open, MIDI Capture keeps everything you play on your MIDI
-keyboard as takes, even when LUNA is not recording, so you can listen back and capture the one
-you want onto an instrument track.
+Never lose an idea. MIDI Capture keeps everything you play on your MIDI keyboard as takes, even
+when LUNA is not recording. Pick which devices it listens to, play back any take and drop the
+one you want onto a track with one click.
 
 <p>
   <img src="docs/screenshot-dark.png" alt="MIDI Capture, dark theme" width="460">
